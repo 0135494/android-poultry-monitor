@@ -1,0 +1,16 @@
+package com.yourfarm.app.data.dao
+
+import androidx.room.*
+import com.yourfarm.app.data.entity.EquipmentFailure
+
+@Dao
+interface EquipmentFailureDao {
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertFlock(flock: EquipmentFailure)
+
+    @Query("SELECT * FROM EquipmentFailure WHERE id = :id")
+    suspend fun get EquipmentFailure(id: String): EquipmentFailure?
+
+    @Query("SELECT * FROM EquipmentFailure")
+    suspend fun getAllFlocks(): List<EquipmentFailure>
+}
