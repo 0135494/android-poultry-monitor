@@ -9,7 +9,7 @@ interface MicroclimateDao {
     suspend fun insertFlock(flock: Microclimate)
 
     @Query("SELECT * FROM Microclimate WHERE id = :id")
-    suspend fun get Microclimate(id: String): Microclimate?
+    suspend fun getFlock(id: String): Microclimate?
 
     @Query("SELECT * FROM Microclimate")
     suspend fun getAllFlocks(): List<Microclimate>
