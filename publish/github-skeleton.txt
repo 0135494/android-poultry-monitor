@@ -1,0 +1,6 @@
+1) Создать новый репозиторий android-poultry-monitor на GitHub под пользователя 0135494 (публичный, main).
+2) Скопировать содержимое локального проекта в этот репозиторий.
+3) Сделать первый push:
+   chmod +x publish/publish.sh
+   ./publish/publish.sh
+4) Включить файл .github/workflows/android.yml в репозиторий.
