@@ -4,7 +4,7 @@ import androidx.room.*
 import com.yourfarm.app.data.entity.VetEvent
 
 @Dao
-interface FlockDao {
+interface VetEventDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFlock(flock: VetEvent)
 
